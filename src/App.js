@@ -29,6 +29,7 @@ export default function App() {
         f.id === selectedFriend.id ? { ...f, balance: f.balance + diff } : f
       )
     );
+    setSelectedFriend(null);
   }
 
   return (
